@@ -4,8 +4,8 @@ done = True
 def pentagonal(n):
     global result
 
-    for i in range(n-1):
-        result += (i+1)*5
+    for i in range(n):
+        result += (i)*5
     result += 1
     return result
 
