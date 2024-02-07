@@ -1,19 +1,11 @@
- # * This is Function to calculate how many dots are around center of pentagon 1 dot.
-result = 0
-done = True
 def pentagonal(n):
-    global result
-
-    for i in range(n):
-        result += (i)*5
-    result += 1
-    return result
+    print(int((3 * n * n - n) / 2))
 
 if __name__ == '__main__':
-    while done:
+    while True:
         try:
-            n = int(input('How many layers do you want to calculate?: '))
-            done = False
+            pentagonal(int(input('How many layers do you want to calculate?: ')))
+            break
         except ValueError:
             print('Value Error, Try again')
-    print(pentagonal(n))
+
